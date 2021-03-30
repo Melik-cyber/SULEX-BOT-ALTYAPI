@@ -27,11 +27,11 @@ const AloneHata = "#f30707";
 
 const emmmmbed = new Discord.MessageEmbed()
 .setThumbnail()
-.addField(`Lord Creative | Teşekkürler`, `**Selamlar, Ben Lord Creative (Lord Creative'nin Geliştiricisi) Öncelikle Botumuzu Eklediğiniz ve Bize Destek Olduğunuz İçin Sizlere Teşekkürlerimi Sunarım**`)
-.addField(`Alone | Prefix`, `**Lord Creative Botun Prefixi(ön eki) = \`${fynx.prefix}\`\n\n Değiştirebilmek için \`${fynx.prefix}prefix\` Yazabilirsiniz.**`)
-.addField(`Lord Creative | Nasıl Kullanılır?`, `**Lord Creative botun tüm özelliklerinden yararlanabilmek için sadece \`${fynx.prefix}yardım\` yazmanız yeterlidir.**`)
-.addField(`Lord Creative | Linkler`, `**Sohbet Kanalına -davet Yazmanız Yeterlidir**`)
-.setFooter(`Lord Creative | Gelişmiş Türkçe Bot | 2020`)
+.addField(`VITA | Teşekkürler`, `**Selamlar, Ben Vita Öncelikle Botumuzu Eklediğiniz ve Bize Destek Olduğunuz İçin Sizlere Teşekkürlerimi Sunarım**`)
+.addField(`VITA | Botun İlk Prefixi : ! (Ünlem) Dir. Prefix Ayarlanabilir.`)
+.addField(`VITA | Nasıl Kullanılır?`, `**Vita botun tüm özelliklerinden yararlanabilmek için sadece \`${fynx.prefix}yardım\` yazmanız yeterlidir.**`)
+.addField(`VITA | Linkler`, `**Sohbet Kanalına -davet Yazmanız Yeterlidir**`)
+.setFooter(`VITA | Gelişmiş Türkçe Bot | 2021`)
 .setTimestamp();
 
 
