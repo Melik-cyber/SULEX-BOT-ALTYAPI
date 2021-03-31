@@ -19,7 +19,7 @@ let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix
   if (!isim31.includes(`-yas-`)) {
   let isim = args[0]
   let yas = args[1];
-  if (!isim) return message.channel.send(`Seni Kayıt Etmem İçin Bir İsim Girmelisin : \`${prefix}kayıt Utku\``)
+  if (!isim) return message.channel.send(`<a:carpi:821416413138911272> Seni Kayıt Etmem İçin Bir İsim Girmelisin : \`${prefix}kayıt Utku\``)
  
   message.reply(`Kaydınız Oluşturuldu.`)
   message.member.setNickname(isim31.replace("-uye-", `${isim}`))
@@ -30,8 +30,8 @@ let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix
   }
   let isim = args[0]
   let yas = args[1];
-  if (!isim) return message.channel.send(`Seni Kayıt Etmem İçin Bir İsim Girmelisin : \`${prefix}kayıt Arda 15\``)
-  if (!yas) return message.channel.send(`Seni Kayıt Etmem İçin Bir Yaş Girmelisin : \`${prefix}kayıt Utku 17\``)
+  if (!isim) return message.channel.send(`<a:carpi:821416413138911272> Seni Kayıt Etmem İçin Bir İsim Girmelisin : \`${prefix}kayıt Arda 15\``)
+  if (!yas) return message.channel.send(`<a:carpi:821416413138911272> Seni Kayıt Etmem İçin Bir Yaş Girmelisin : \`${prefix}kayıt Utku 17\``)
 
   
     message.reply(`Kaydınız Oluşturuldu.`)
