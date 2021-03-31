@@ -23,7 +23,7 @@ let i = client.shard.id
     .setImage(`https://geekflare.com/wp-content/uploads/2021/02/discord-bot-hosting-1200x385.jpg`)
     
     for(i=0;i<client.shard.count;i++) {
-        shardembed.addField(`  **Shard ${i}**`, `<:simseq:821416901086806027>   **Ping:** ${Math.round(shardinfo.ping[i])}ms\n<:a_:821738957997211659>   **Sunucu:** ${shardinfo.server_count[i]}\n <:a_:821738957997211659>  **Kullanıcı:** ${shardinfo.user_count[i]}\n <:a_:821738957997211659>  **Uptime:** ${moment.duration(shardinfo.uptime[i]).format(`D [Gün] , H [Saat], m [Dakika], s [Saniye]`)} \n <:a_:821738957997211659>  **Bu Sunucunun Shardı Id'si**: ${client.shard.id}`, true)
+        shardembed.addField(`<a:ayarlar:791552216644190208>  **Shard ${i}**`, `<:simseq:821416901086806027>   **Ping:** ${Math.round(shardinfo.ping[i])}ms\n<a:hss:809152421506056223>  **Sunucu:** ${shardinfo.server_count[i]}\n <:hs2:809152270716370944>  **Kullanıcı:** ${shardinfo.user_count[i]}\n <a:ayarlar2:821416212566507520> **Uptime:** ${moment.duration(shardinfo.uptime[i]).format(`D [Gün] , H [Saat], m [Dakika], s [Saniye]`)} \n  **Bu Sunucunun Shardı Id'si**: ${client.shard.id}`, true)
     }
     message.channel.send(shardembed)
 }
