@@ -27,8 +27,8 @@ exports.run = async(client, message, args) => {
   .setColor("#ffffff")
   .addField('<a:onayl:809153025234305024>  İşlem', 'Sunucudan Banlama')
   .addField('<a:banl:809151485807427584>  Banlanan Üye', `${user.tag} (${user.id})`)
-  .addField('  Banlayan Yetkili', `${message.author.username}#${message.author.discriminator}`)
-  .addField('<a:onayl:809153025234305024> Ban Sebebi', "```" + reason + "```")
+  .addField('<:banyedinkocum:821416288538460261>  Banlayan Yetkili', `${message.author.username}#${message.author.discriminator}`)
+  .addField('<:kategori:809152540763095100> Ban Sebebi', "```" + reason + "```")
   modlog.send(embed);
   user.send(`\`${message.guild.name}\` **Adlı Sunucuda Yaptığınız Olumsuz Davranışlardan Dolayı Yasaklandınız** \n **Yetkilinin Girdiği Sebep:** \`${reason}\``)
   
@@ -36,7 +36,7 @@ exports.run = async(client, message, args) => {
   message.guild.members.ban(user, 2);
   
   const embed2 = new Discord.MessageEmbed()
-  .setColor("#ffffff")
+  .setColor("#000000")
   .setDescription(`<:a_:821738957997211659>  **Kullanıcı Başarıyla Banlandı**`)
   message.channel.send(embed2)
 
