@@ -3,14 +3,14 @@ const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "-";
   if (!message.member.hasPermission("ADMINISTRATOR")) {
-    message.channel.send(`<:a_:821738957997211659>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+    message.channel.send(`<a:carpi:821416413138911272>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
     return;
   }
   let u = message.mentions.users.first();
   if (!u) {
     return message.channel.send(
       new Discord.MessageEmbed()
-        .setDescription("Lütfen daveti sıfırlanacak kişiyi etiketleyiniz!")
+        .setDescription("<a:carpi:821416413138911272> Lütfen daveti sıfırlanacak kişiyi etiketleyiniz!")
         .setColor("RED")
         .setFooter(bot.user.username, bot.user.avatarURL)
     );
@@ -29,11 +29,11 @@ module.exports.run = async (bot, message, args) => {
     var reactions = sentEmbed.createReactionCollector(filter, {
       time: 30000
     });
-    reactions.on("end", () => sentEmbed.edit("İşlem iptal oldu!"));
+    reactions.on("end", () => sentEmbed.edit("<a:carpi:821416413138911272> İşlem iptal oldu!"));
     reactions.on("collect", async function(reaction) {
       if (reaction.emoji.name === "✅") {
         message.channel.send(
-          `İşlem onaylandı! ${u} adlı şahsın davetleri sıfırlandı!`
+          `<a:onayl:809153025234305024> İşlem onaylandı! ${u} adlı şahsın davetleri sıfırlandı!`
         );
         db.delete(`davet_${u.id}_${message.guild.id}`);
       }

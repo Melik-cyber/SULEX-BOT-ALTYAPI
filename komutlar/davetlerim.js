@@ -22,7 +22,7 @@ exports.run = async (client, message, args, tools) => {
     const embed = new Discord.MessageEmbed()
       .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
       .addField(`Total Davet:`, sayı2, true)
-      .setColor("#ffffff")
+      .setColor("#000000")
 .setThumbnail(`https://cdn.discordapp.com/attachments/749380170351116290/750088540288712914/B0oBpM.png`)
 
     message.channel.send(embed);
@@ -31,7 +31,7 @@ exports.run = async (client, message, args, tools) => {
     const embed = new Discord.MessageEmbed()
       .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
       .addField(`Total Davet:`, sayı2, true)
-      .setColor("#ffffff")
+      .setColor("#000000")
 .setThumbnail(`https://cdn.discordapp.com/attachments/749380170351116290/750088540288712914/B0oBpM.png`)
     message.channel.send(embed);
     return;
@@ -40,7 +40,7 @@ exports.run = async (client, message, args, tools) => {
     const embed = new Discord.MessageEmbed()
       .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
       .addField(`Total Davet:`, sayı2, true)
-      .setColor("#ffffff")
+      .setColor("#000000")
 .setThumbnail(`https://cdn.discordapp.com/attachments/749380170351116290/750088540288712914/B0oBpM.png`)
 
       .setDescription(
@@ -55,7 +55,7 @@ exports.run = async (client, message, args, tools) => {
       const embed = new Discord.MessageEmbed()
         .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
         .addField(`Total Davet:`, sayı2, true)
-        .setColor("#ffffff")
+        .setColor("#000000")
 .setThumbnail(`https://cdn.discordapp.com/attachments/749380170351116290/750088540288712914/B0oBpM.png`)
 
       message.channel.send(embed);
@@ -65,7 +65,7 @@ exports.run = async (client, message, args, tools) => {
       const embed = new Discord.MessageEmbed()
         .addField(`Davetlerin Sahibi`, `<@` + kişi.id + `>`, true)
         .addField(`Total Davet:`, sayı2, true)
-        .setColor("#ffffff")
+        .setColor("#000000")
 .setThumbnail(`https://cdn.discordapp.com/attachments/749380170351116290/750088540288712914/B0oBpM.png`)
         .setFooter(client.user.username, client.user.avatarURL())
 

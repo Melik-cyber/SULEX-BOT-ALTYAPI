@@ -1,7 +1,7 @@
 const Discord = require("discord.js"),
   db = require("quick.db");
 exports.run = async (client, message, args) => {
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:carpi:821416413138911272>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
 
   let veri = await db.fetch(`rol1_${message.guild.id}`);
   let veri2 = await db.fetch(`rol2_${message.guild.id}`);
@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
   let rol = message.mentions.roles.first();
   if (!rol) {
     const embed = new Discord.MessageEmbed()
-      .setDescription(`Lütfen silinecek rütbenin rolünü etiketleyiniz!`)
+      .setDescription(`<a:carpi:821416413138911272> Lütfen silinecek rütbenin rolünü etiketleyiniz!`)
       .setColor("RED")
       .setFooter(client.user.username, client.user.avatarURL);
     message.channel.send(embed);
@@ -18,7 +18,7 @@ exports.run = async (client, message, args) => {
   if (rol.id === veri) {
     const embed = new Discord.MessageEmbed()
       .setDescription(
-        `Başarıyla rütbeler arasında **${
+        `<a:onayl:809153025234305024> Başarıyla rütbeler arasında **${
           message.guild.roles.get(veri).name
         }** rolüne sahip rütbe silindi!`
       )
@@ -38,7 +38,7 @@ exports.run = async (client, message, args) => {
   } else if (rol.id === veri2) {
     const embed = new Discord.MessageEmbed()
       .setDescription(
-        `Başarıyla rütbeler arasında **${
+        `<a:onayl:809153025234305024> Başarıyla rütbeler arasında **${
           message.guild.roles.get(veri2).name
         }** rolüne sahip rütbe silindi!`
       )
@@ -50,7 +50,7 @@ exports.run = async (client, message, args) => {
     return;
   } else {
     const embed = new Discord.MessageEmbed()
-      .setDescription(`Rütbeler arasında böyle bir rütbe bulamadım!`)
+      .setDescription(`<a:carpi:821416413138911272> Rütbeler arasında böyle bir rütbe bulamadım!`)
       .setColor("RED")
       .setFooter(client.user.username, client.user.avatarURL);
     message.channel.send(embed);
