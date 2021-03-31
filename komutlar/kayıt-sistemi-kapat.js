@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 const db = require('quick.db')
 exports.run = (client, message, args) => { 
 
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<:a_:821738957997211659>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:carpi:821416413138911272>  **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
  const rol = db.fetch(`kayitKanal_${message.guild.id}`)  
- if(!rol) return message.channel.send(`<:a_:821738957997211659>   **Bu özellik zaten kapalı! :wink: **`)
+ if(!rol) return message.channel.send(`<a:carpi:821416413138911272>   **Bu özellik zaten kapalı! :wink: **`)
  
  
-  message.channel.send(`<:a_:821738957997211659>   **Kayıt Sistemi başarılı bir şekilde kapatıldı.**`)
+  message.channel.send(`<a:onayl:809153025234305024> **Kayıt Sistemi başarılı bir şekilde kapatıldı.**`)
 
  
   db.delete(`kayitAR_${message.guild.id}`)  

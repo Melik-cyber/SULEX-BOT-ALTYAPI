@@ -11,24 +11,24 @@ exports.run = async(client, message, args) => {
   
 
     
-  if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send('<:a_:821738957997211659>  **Gerekli Yetkin Yok Dostum**')
+  if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send('<a:carpi:821416413138911272>  **Gerekli Yetkin Yok Dostum**')
 
   
   let user = message.mentions.users.first();
   let reason = args.slice(1).join(' ');
   
-  if (db.has(`log_${message.guild.id}`) === false) return message.channel.send(`<:a_:821738957997211659>   **Mod Log Kanalı Ayarlanmamış Ayarlamak İçin** | ${prefix}modlog #kanal`);
+  if (db.has(`log_${message.guild.id}`) === false) return message.channel.send(`<a:carpi:821416413138911272>   **Mod Log Kanalı Ayarlanmamış Ayarlamak İçin** | ${prefix}modlog #kanal`);
   let modlog = message.guild.channels.cache.get(db.fetch(`log_${message.guild.id}`).replace("<#", "").replace(">", ""));
-  if (message.mentions.users.size < 1) return message.channel.send('<:a_:821738957997211659>  **Lütfen Banlamak İstediğiniz Üyeyi Etiketleyin**');
-  if (reason.length < 1) return message.channel.send('<:a_:821738957997211659>  **Lütfen Sebep Giriniz**');
-  if (user.id === message.author.id) return message.channel.send('<:a_:821738957997211659>  **Dostum Kendini Banlıyamazsın**');
+  if (message.mentions.users.size < 1) return message.channel.send('<a:carpi:821416413138911272>  **Lütfen Banlamak İstediğiniz Üyeyi Etiketleyin**');
+  if (reason.length < 1) return message.channel.send('<a:carpi:821416413138911272>  **Lütfen Sebep Giriniz**');
+  if (user.id === message.author.id) return message.channel.send('<a:carpi:821416413138911272>  **Dostum Kendini Banlıyamazsın**');
 
   const embed = new Discord.MessageEmbed()
   .setColor("#ffffff")
-  .addField('<:a_:821738957997211659>  İşlem', 'Sunucudan Banlama')
-  .addField('<:a_:821738957997211659>  Banlanan Üye', `${user.tag} (${user.id})`)
-  .addField('<:a_:821738957997211659>  Banlayan Yetkili', `${message.author.username}#${message.author.discriminator}`)
-  .addField('<:a_:821738957997211659>  Ban Sebebi', "```" + reason + "```")
+  .addField('<a:onayl:809153025234305024>  İşlem', 'Sunucudan Banlama')
+  .addField('<a:banl:809151485807427584>  Banlanan Üye', `${user.tag} (${user.id})`)
+  .addField('  Banlayan Yetkili', `${message.author.username}#${message.author.discriminator}`)
+  .addField('<a:onayl:809153025234305024> Ban Sebebi', "```" + reason + "```")
   modlog.send(embed);
   user.send(`\`${message.guild.name}\` **Adlı Sunucuda Yaptığınız Olumsuz Davranışlardan Dolayı Yasaklandınız** \n **Yetkilinin Girdiği Sebep:** \`${reason}\``)
   

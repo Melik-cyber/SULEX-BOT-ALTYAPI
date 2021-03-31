@@ -2,7 +2,7 @@ const db = require("quick.db");
 const Discord = require("discord.js");
 
 exports.run = async (client, message, args) => {
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<:a_:821738957997211659>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:carpi:821416413138911272>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
 
   let prefix = (await db.fetch(`prefix.${message.guild.id}`)) || "-";
 
@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
       .setColor("BLACK")
       .setTitle("Rol Koruma sistemi!")
       .setDescription(
-        "**Hatalı kullanım! örnek: ${prefix}rol-koruma aç && kapat**"
+        "**<a:carpi:821416413138911272> Hatalı kullanım! örnek: ${prefix}rol-koruma aç && kapat**"
       );
 
     message.channel.send(embed);
@@ -24,7 +24,7 @@ exports.run = async (client, message, args) => {
       const embed = new Discord.MessageEmbed()
         .setColor("BLACK")
         .setTitle("Rol Koruma sistemi!")
-        .setDescription("**Görünüşe göre rol koruma zaten aktif!**");
+        .setDescription("**<a:carpi:821416413138911272> Görünüşe göre rol koruma zaten aktif!**");
 
       message.channel.send(embed);
       return;
@@ -33,7 +33,7 @@ exports.run = async (client, message, args) => {
       const embed = new Discord.MessageEmbed()
         .setColor("BLACK")
         .setTitle("Rol Koruma sistemi!")
-        .setDescription("**Rol koruma başarıyla açıldı!**");
+        .setDescription("**<a:onayl:809153025234305024> Rol koruma başarıyla açıldı!**");
 
       message.channel.send(embed);
     }
@@ -42,7 +42,7 @@ exports.run = async (client, message, args) => {
     const embed = new Discord.MessageEmbed()
       .setColor("BLACK")
       .setTitle("Rol Koruma sistemi!")
-      .setDescription("**Rol Koruma başarıyla kapandı!**");
+      .setDescription("**<a:onayl:809153025234305024> Rol Koruma başarıyla kapandı!**");
 
     message.channel.send(embed);
   }
