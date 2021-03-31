@@ -1,7 +1,7 @@
 const Discord = require("discord.js"),
   db = require("quick.db");
 exports.run = async (client, message, args) => {
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<:a_:821738957997211659>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:carpi:821416413138911272>  **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
 
   let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "-";
   let veri = await db.fetch(`rol1_${message.guild.id}`);
@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
   let veri12 = await db.fetch(`roldavet1_${message.guild.id}`)
   if (veri2) {
     const embed = new Discord.MessageEmbed()
-      .setDescription(`Zaten maksimum rütbe sınırına ulaşmışsınız!`)
+      .setDescription(`<a:carpi:821416413138911272> Zaten maksimum rütbe sınırına ulaşmışsınız!`)
       .setColor("RED")
       .setFooter(client.user.username, client.user.avatarURL);
     message.channel.send(embed);
@@ -21,7 +21,7 @@ exports.run = async (client, message, args) => {
     if (!sine) {
       const embed = new Discord.MessageEmbed()
         .setDescription(
-          `Lütfen bir rol etiketleyiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
+          `<a:carpi:821416413138911272> Lütfen bir rol etiketleyiniz!\nÖrnek: ${prefix}rütbe-ekle @Sahip 5`
         )
         .setColor("RED")
         .setFooter(client.user.username, client.user.avatarURL);
@@ -31,7 +31,7 @@ exports.run = async (client, message, args) => {
     if (!enis) {
       const embed = new Discord.MessageEmbed()
         .setDescription(
-          `Lütfen bir davet sayısı belirtiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
+          `<a:carpi:821416413138911272> Lütfen bir davet sayısı belirtiniz!\nÖrnek: ${prefix}rütbe-ekle @Sahip 5`
         )
         .setColor("RED")
         .setFooter(client.user.username, client.user.avatarURL);
@@ -40,7 +40,7 @@ exports.run = async (client, message, args) => {
     }
     const embed = new Discord.MessageEmbed()
       .setDescription(
-        `Başarılı bir şekilde ${sine} rolü ${enis} davet karşılığında elde edilebilecek!`
+        `<a:onayl:809153025234305024> Başarılı bir şekilde ${sine} rolü ${enis} davet karşılığında elde edilebilecek!`
       )
       .setColor("GREEN")
       .setFooter(client.user.username, client.user.avatarURL);
@@ -55,7 +55,7 @@ exports.run = async (client, message, args) => {
     if (!sine) {
       const embed = new Discord.MessageEmbed()
         .setDescription(
-          `Lütfen bir rol etiketleyiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
+          `<a:carpi:821416413138911272> Lütfen bir rol etiketleyiniz!\nÖrnek: ${prefix}rütbe-ekle @Sahip 5`
         )
         .setColor("RED")
         .setFooter(client.user.username, client.user.avatarURL);
@@ -65,7 +65,7 @@ exports.run = async (client, message, args) => {
     if (!enis) {
       const embed = new Discord.MessageEmbed()
         .setDescription(
-          `Lütfen bir davet sayısı belirtiniz!\nÖrnek: ${prefix}rütbe-ekle @Qral 5`
+          `<a:carpi:821416413138911272> Lütfen bir davet sayısı belirtiniz!\nÖrnek: ${prefix}rütbe-ekle @Sahip 5`
         )
         .setColor("RED")
         .setFooter(client.user.username, client.user.avatarURL);
@@ -74,7 +74,7 @@ exports.run = async (client, message, args) => {
     }
     const embed = new Discord.MessageEmbed()
       .setDescription(
-        `Başarılı bir şekilde ${sine} rolü ${enis} davet karşılığında elde edilebilecek!`
+        `<a:onayl:809153025234305024> Başarılı bir şekilde ${sine} rolü ${enis} davet karşılığında elde edilebilecek!`
       )
       .setColor("GREEN")
       .setFooter(client.user.username, client.user.avatarURL);

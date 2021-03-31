@@ -3,7 +3,7 @@ const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   let prefix = (await db.fetch(`prefix.${message.guild.id}`)) || "-";
   if (!message.member.hasPermission("ADMINISTRATOR")) {
-  message.channel.send(`<:a_:821738957997211659>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+  message.channel.send(`<a:carpi:821416413138911272> **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
     return;
   }
   let u = message.mentions.users.first();
@@ -12,22 +12,22 @@ let m = args.slice(1).join(" ")
     return message.channel.send(
       new Discord.MessageEmbed()
       .setFooter(bot.user.username, bot.user.avatarURL)
-        .setDescription("**Lütfen davet eklenecek kişiyi etiketleyiniz!**")
-        .setColor("#ffffff")
+        .setDescription("<a:carpi:821416413138911272> **Lütfen davet eklenecek kişiyi etiketleyiniz!**")
+        .setColor("#000000")
     );
   }
     if (!m) {
     return message.channel.send(
       new Discord.MessageEmbed()
       .setFooter(bot.user.username, bot.user.avatarURL)
-        .setDescription("**Lütfen eklenecek davet sayısını giriniz.**")
-        .setColor("#ffffff")
+        .setDescription("<a:carpi:821416413138911272> **Lütfen eklenecek davet sayısını giriniz.**")
+        .setColor("#000000")
     );
   }
   const embed = new Discord.MessageEmbed()
-    .setColor("#ffffff")
+    .setColor("#000000")
   .setFooter(bot.user.username, bot.user.avatarURL)
-    .setDescription(`${u} Adlı şahsa; ${m} davet eklendi!`);
+    .setDescription(`<a:onayl:809153025234305024> ${u} Adlı şahsa; ${m} davet eklendi!`);
   message.channel.send(embed);
   db.add(`davet_${u.id}_${message.guild.id}`, +m);
 };
