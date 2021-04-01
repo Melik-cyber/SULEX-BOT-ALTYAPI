@@ -20,7 +20,7 @@ const Discord = require('discord.js');
        .setTimestamp()
        .setFooter('VitaBot | Gecenin Karanlığı |', client.user.avatarURL)
 
-       .addField(`**Lord Creative  | Oylama**`, `**${question}**`);
+       .addField(`**Vita Bot  | Oylama**`, `**${question}**`);
    
      message.channel.send(embed).then(function(message) {
 
