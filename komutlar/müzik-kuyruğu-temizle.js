@@ -23,7 +23,7 @@ const hata1 = new Discord.MessageEmbed()
 .setColor(AloneHata) 
 .setTitle("• Hata: 011 •")
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
-.setDescription(`   **| Müzik Kuyruğunu temizleyebilmek için bir ses kanalında olmanız gerekmektedir!**`)
+.setDescription(`<a:carpi:821416413138911272>   **| Müzik Kuyruğunu temizleyebilmek için bir ses kanalında olmanız gerekmektedir!**`)
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());  
 if(!message.member.voice.channel) return message.channel.send(hata1)
 
@@ -33,8 +33,8 @@ const hata2 = new Discord.MessageEmbed()
 .setColor(AloneHata) 
 .setTitle("• Hata: 001 •")
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
-.setDescription(`<:a_:821738957997211659>   **| Şu anda hiçbir müzik çalmamaktadır!**`)
-.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());    
+.setDescription(`<a:carpi:821416413138911272>  **| Şu anda hiçbir müzik çalmamaktadır!**`)
+.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());    
 if(!client.player.isPlaying(message.guild.id)) return message.channel.send(hata2)
 
 //------------------------------------------------//  
