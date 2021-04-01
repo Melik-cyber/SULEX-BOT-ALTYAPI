@@ -7,7 +7,7 @@ exports.run = async(client, message, args) => {
 
   let prefix = await require('quick.db').fetch(`prefix.${message.guild.id}`) || ayarlar.prefix
 
-  if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(`<:a_:821738957997211659>  **Hey Sen** Evet Sen! Bu Komut İçin Yeterli Yetkin Yok!`)
+  if (!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(`<:a_:821738957997211659>  `Bu  kullanabilmek için ``YÖNETİCİ`` yetkisine sahip olmanız gerek.`)
 if (!args[0])  {
     const küfürcu0k = new Discord.MessageEmbed()
     .setTitle('Başarısız')

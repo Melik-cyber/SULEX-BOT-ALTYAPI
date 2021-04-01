@@ -19,23 +19,23 @@ exports.run = async(client, message, args) => {
   let reason = args.slice(1).join(' ');
  if (db.has(`log_${message.guild.id}`) === false) return message.channel.send(`<a:carpi:821416413138911272>  **Mod Log Kanalı Ayarlanmamış Ayarlamak için  | ${prefix}modlog #kanal`);
   let modlog = message.guild.channels.cache.get(db.fetch(`log_${message.guild.id}`).replace("<#", "").replace(">", ""));
-  if (message.mentions.users.size < 1) return message.channel.send('<:a_:821738957997211659>  **Lütfen Kicklemek İstediğiniz Kullanıcıyı Etiketleyin**');
-  if (reason.length < 1) return message.channel.send('<:a_:821738957997211659>   **Kickleme Sebebinizi Giriniz**');
-  if (user.id === message.author.id) return message.channel.send('<:a_:821738957997211659>  **Kendini Kickleyeceğine Kendin Çıksana ?**');
+  if (message.mentions.users.size < 1) return message.channel.send('<a:carpi:821416413138911272>  **Lütfen Kicklemek İstediğiniz Kullanıcıyı Etiketleyin**');
+  if (reason.length < 1) return message.channel.send('<a:carpi:821416413138911272>   **Kickleme Sebebinizi Giriniz**');
+  if (user.id === message.author.id) return message.channel.send('<a:carpi:821416413138911272>  **Kendini Kickleyemessin!**');
 
   const embed = new Discord.MessageEmbed()
-  .setColor("#ffffff")
-  .addField('<:a_:821738957997211659>  İşlem', 'Sunucudan Kickleme')
-  .addField('<:a_:821738957997211659>  Kicklenen Üye', `${user.tag} (${user.id})`)
-  .addField('<:a_:821738957997211659>  Kickleyen Yetkili', `${message.author.username}#${message.author.discriminator}`)
-  .addField('<:a_:821738957997211659>  Kick Sebebi', "```" + reason + "```")
+  .setColor("#000000")
+  .addField('<a:onayl:809153025234305024>  İşlem', 'Sunucudan Kickleme')
+  .addField('<a:baybay:821416310855696444>  Kicklenen Üye', `${user.tag} (${user.id})`)
+  .addField('<a:ayarlar:821416196675076207> Kickleyen Yetkili', `${message.author.username}#${message.author.discriminator}`)
+  .addField('<:kategori:809152540763095100>  Kick Sebebi', "```" + reason + "```")
   modlog.send(embed);
   
   message.guild.member(user).kick();
   
   const embed2 = new Discord.MessageEmbed()
-  .setColor("#ffffff")
-  .setDescription(`<:a_:821738957997211659>  **Kullanıcı Başarıyla Kicklendi**`)
+  .setColor("#000000")
+  .setDescription(`<a:onayl:809153025234305024> **Kullanıcı Başarıyla Kicklendi**`)
   message.channel.send(embed2)
   
 };
