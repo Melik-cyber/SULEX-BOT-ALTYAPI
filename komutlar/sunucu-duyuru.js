@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
  exports.run = (client, message, args) => {
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<:a_:821738957997211659>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:carpi:821416413138911272>   **Bu komutu kullanabilmek için "\`Yönetici\`" yetkisine sahip olmalısın.**`);
 
    let question = args.join(' ');
 
@@ -9,18 +9,18 @@ const Discord = require('discord.js');
 
     const embedd = new Discord.MessageEmbed()
 
-     .setDescription(`Yazı Yazman Gerek`);
+     .setDescription(`<a:carpi:821416413138911272> Yazı Yazman Gerek`);
    
    if (!question) return message.channel.send(embedd).then(m => m.delete(5000));
 
      const embed = new Discord.MessageEmbed()
 
-       .setColor("#ffffff")
+       .setColor("#000000")
        .setThumbnail(client.user.avatarURL)
        .setTimestamp()
-       .setFooter('Lord Creative', client.user.avatarURL)
+       .setFooter('Vita', client.user.avatarURL)
 
-       .addField(`**Lord Creative | Duyuru**`, `**${question}**`)
+       .addField(`**Vita | Duyuru**`, `**${question}**`)
    
      message.channel.send(embed).then(function(message) {
 
