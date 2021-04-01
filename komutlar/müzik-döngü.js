@@ -10,15 +10,15 @@ module.exports.run = async (client, message) => {
 
   const embed = new Discord.MessageEmbed()
 .setColor(AloneDogru)
-.setTitle("Lord Creative |  Döngü")
-.setDescription(`<:a_:821738957997211659>  | Müzik döngüsü, ${message.author} tarafından \`aktif\` edildi.`) 
+.setTitle("Vita |  Döngü")
+.setDescription(`<a:mavitik:821416581216600135>  | Müzik döngüsü, ${message.author} tarafından \`aktif\` edildi.`) 
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());
   
   const embedd = new Discord.MessageEmbed()
 .setColor(AloneDogru)
-.setTitle("Lord Creative | Döngü")
-.setDescription(`<:a_:821738957997211659>  | Müzik döngüsü, ${message.author} tarafından \`de-aktif\` edildi.`) 
+.setTitle("Vita | Döngü")
+.setDescription(`<a:mavitik:821416581216600135>  | Müzik döngüsü, ${message.author} tarafından \`de-aktif\` edildi.`) 
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());  
   
