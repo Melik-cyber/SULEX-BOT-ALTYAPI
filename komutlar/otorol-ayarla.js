@@ -5,16 +5,16 @@ const fynx = require("../ayarlar/bot.json");
 let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix     
 let rol = message.mentions.roles.first() 
 let kanal = message.mentions.channels.first()
-if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<:a_:821738957997211659>  **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
+if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(`<a:carpi:821416413138911272>  **Bu komutu kullanabilmek için** "\`Yönetici\`" **yetkisine sahip olmalısın.**`);
  
- if(!rol) return message.channel.send(`<:a_:821738957997211659>   **Lütfen Bir Rol Belirt!**\nRolü Etiketleyemiyorsan **Rolün Etiketleme Seçeneğini Aktif Etmeyi Unutma** \n**__Örnek Kullanım__** : \`${prefix}sayaç-ayarla #kanal <Sayı>\`\n\n**__Önemli Not!!__**: **Oto Rol'u Ayarlayabilmek İçin Botun Rolü, Verilecek Rolün Üstünde Bir Rolde Olmalı Yoksa Rolü Veremez!** `)
+ if(!rol) return message.channel.send(`<a:carpi:821416413138911272>   **Lütfen Bir Rol Belirt!**\nRolü Etiketleyemiyorsan **Rolün Etiketleme Seçeneğini Aktif Etmeyi Unutma** \n**__Örnek Kullanım__** : \`${prefix}sayaç-ayarla #kanal <Sayı>\`\n\n**__Önemli Not!!__**: **Oto Rol'u Ayarlayabilmek İçin Botun Rolü, Verilecek Rolün Üstünde Bir Rolde Olmalı Yoksa Rolü Veremez!** `)
  
- if(!kanal) return message.channel.send(`<:a_:821738957997211659>   **Lütfen Bir Kanal Belirt!** \n**__Örnek Kullanım__** : \`${prefix}otorol-ayarla @Rol #Kanal\``)
+ if(!kanal) return message.channel.send(`<a:carpi:821416413138911272>   **Lütfen Bir Kanal Belirt!** \n**__Örnek Kullanım__** : \`${prefix}otorol-ayarla @Rol #Kanal\``)
  
   message.channel.send(`╔▬▬▬▬▬▬▬▬Vita Otorol▬▬▬▬▬▬▬▬▬
-║► <:a_:821738957997211659>  Otorol Aktif Edildi.
-║► <:a_:821738957997211659>  **${rol}** Olarak Güncelledim! 
-║► <:a_:821738957997211659>  Kayıt Kanalını **${kanal}** Olarak Güncelledim! 
+║► <a:mavitik:821416581216600135>  Otorol Aktif Edildi.
+║► <:dier:811646351284109324>  **${rol}** Olarak Güncelledim! 
+║► <:kanal:811645893547393096>  Kayıt Kanalını **${kanal}** Olarak Güncelledim! 
 ╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬`)
 
  
