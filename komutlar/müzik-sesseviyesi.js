@@ -15,8 +15,8 @@ const hata1 = new Discord.MessageEmbed()
 .setColor(AloneHata) 
 .setTitle("• Hata: 012 •")
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
-.setDescription(`<:a_:821738957997211659>  **| Oynatılan bir müziğin ses seviyesini ayarlayabilmek için bir ses kanalında olmanız gerekmektedir!**`)
-.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());  
+.setDescription(`<a:carpi:821416413138911272>  **| Oynatılan bir müziğin ses seviyesini ayarlayabilmek için bir ses kanalında olmanız gerekmektedir!**`)
+.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());  
 if(!message.member.voice.channel) return message.channel.send(hata1)
 
 //------------------------------------------------//
@@ -25,8 +25,8 @@ const hata2 = new Discord.MessageEmbed()
 .setColor(AloneHata) 
 .setTitle("• Hata: 001 •")
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
-.setDescription(`<:a_:821738957997211659>  **| Şu anda hiçbir müzik çalmamaktadır!**`)
-.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());    
+.setDescription(`<a:carpi:821416413138911272> **| Şu anda hiçbir müzik çalmamaktadır!**`)
+.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());    
 if(!client.player.isPlaying(message.guild.id)) return message.channel.send(hata2)
 
 //------------------------------------------------//  
@@ -37,10 +37,10 @@ if (args < 0) return message.channel.send({embed: {color: AloneHata, description
   client.player.setVolume(message.guild.id, sesseviyesi);
       const embedd = new Discord.MessageEmbed()
 .setColor(AloneDogru)
-.setTitle("Lord Creative |  Ses Seviyesi")
-.setDescription(`<:a_:821738957997211659>  **| Ses seviyesi, ${message.author} tarafından** \`${args.join(" ")}\` **olarak ayarlandı.**`) 
+.setTitle("Vita |  Ses Seviyesi")
+.setDescription(`<a:mavitik:821416581216600135>  **| Ses seviyesi, ${message.author} tarafından** \`${args.join(" ")}\` **olarak ayarlandı.**`) 
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
-.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());   
+.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());   
 message.channel.send(embedd)
 }
 

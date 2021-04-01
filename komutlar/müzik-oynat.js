@@ -45,17 +45,17 @@ const sarki = await client.player.play(message.member.voice.channel, args.join("
   const oynanan = new Discord.MessageEmbed()
   .setColor(AloneDogru)
   .setTitle("Vita | Oynatılan Şarkı")
-  .setDescription(`  **|** \`${sarki.name}\` **adlı müzik şu anda oynatılıyor.**`)
+  .setDescription(` :musical_note: **|** \`${sarki.name}\` **adlı müzik şu anda oynatılıyor.**`)
   .setThumbnail(client.user.avatarURL())
-.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());   
+.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());   
 message.channel.send(oynanan)
 sarki.queue.on('end', () => {
   const bitti = new Discord.MessageEmbed()
   .setColor(AloneDogru)
   .setTitle("Lord Creative | Kuyruk Bitti!")
-  .setDescription(`<:a_:821738957997211659>  **| Kuyruktaki tüm müzikler oynatıldı. Lord Creative kanaldan ayrılıyor.\n\nLord Creative Tercih ettiğiniz için teşekkür ederiz.**`)
+  .setDescription(`<:kategori:809152540763095100>  **| Kuyruktaki tüm müzikler oynatıldı. Lord Creative kanaldan ayrılıyor.\n\nLord Creative Tercih ettiğiniz için teşekkür ederiz.**`)
   .setThumbnail(client.user.avatarURL())
-.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2020`, client.user.avatarURL());  
+.setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());  
 message.channel.send(bitti)
 })
     }    
