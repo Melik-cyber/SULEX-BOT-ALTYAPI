@@ -11,7 +11,7 @@ if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(
  
  if(!kanal) return message.channel.send(`<:a_:821738957997211659>   **Lütfen Bir Kanal Belirt!** \n**__Örnek Kullanım__** : \`${prefix}otorol-ayarla @Rol #Kanal\``)
  
-  message.channel.send(`╔▬▬▬▬▬▬▬▬Lord Creative Otorol▬▬▬▬▬▬▬▬▬
+  message.channel.send(`╔▬▬▬▬▬▬▬▬Vita Otorol▬▬▬▬▬▬▬▬▬
 ║► <:a_:821738957997211659>  Otorol Aktif Edildi.
 ║► <:a_:821738957997211659>  **${rol}** Olarak Güncelledim! 
 ║► <:a_:821738957997211659>  Kayıt Kanalını **${kanal}** Olarak Güncelledim! 
