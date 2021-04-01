@@ -12,12 +12,12 @@ exports.run = async(client, message, args) => {
   
 
   
-  if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send('<a:carpi:821416413138911272> ')
+  if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send('<a:carpi:821416413138911272> **Bu komutu kullanabilmek için `Üyeleri At` yetkisine sahip olmanız gerek.**')
 
   
   let user = message.mentions.users.first();
   let reason = args.slice(1).join(' ');
- if (db.has(`log_${message.guild.id}`) === false) return message.channel.send(`<:a_:821738957997211659>  **Mod Log Kanalı Ayarlanmamış Ayarlamak için  | ${prefix}modlog #kanal`);
+ if (db.has(`log_${message.guild.id}`) === false) return message.channel.send(`<a:carpi:821416413138911272>  **Mod Log Kanalı Ayarlanmamış Ayarlamak için  | ${prefix}modlog #kanal`);
   let modlog = message.guild.channels.cache.get(db.fetch(`log_${message.guild.id}`).replace("<#", "").replace(">", ""));
   if (message.mentions.users.size < 1) return message.channel.send('<:a_:821738957997211659>  **Lütfen Kicklemek İstediğiniz Kullanıcıyı Etiketleyin**');
   if (reason.length < 1) return message.channel.send('<:a_:821738957997211659>   **Kickleme Sebebinizi Giriniz**');
