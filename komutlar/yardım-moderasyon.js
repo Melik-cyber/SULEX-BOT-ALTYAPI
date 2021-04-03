@@ -5,8 +5,8 @@ const fynx = require("../ayarlar/bot.json");
 exports.run = async (client, message, args) => { 
 let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix 
 let eklenti = new Discord.MessageEmbed()  
-.setColor('#ffffff') 
-.setAuthor(`Lord Creative Moderasyon Komutları`, client.user.avatarURL())
+.setColor('#000000') 
+.setAuthor(`Vita Moderasyon Komutları`, client.user.avatarURL())
 .setDescription(`<:a_:821738957997211659>  Lord Creative botumuzu eklemek için \`${prefix}davet\` yazabilirsiniz.`)
 .addField(`__Sayaç__`,`<:a_:821738957997211659>  \`${prefix}sayaç\` Sunucunuza Sayaç Kurarsınız ve Anlık Bilgi Alırsınız`,true)
 .addField(`__Otomatik Rol__`,`<:a_:821738957997211659>  \`${prefix}otorol\` Suncunuza Yeni Gelen Üyelere Belirlediğiniz Rölü Verir`,true)
@@ -23,8 +23,8 @@ let eklenti = new Discord.MessageEmbed()
 .addField(`__Yavaş Mod__`,`<:a_:821738957997211659>  \`${prefix}yavaşmod\` Kanala Yazı Süre Limiti Koyar.`,true)
 .addField(`__Sa-As__`,`<:a_:821738957997211659>  \`${prefix}sa-as\` Sunucuzda Selam Verenlere Selam Der`,true)
 .addField(`__Yasaklı Tag__`,`<:a_:821738957997211659>  \`${prefix}yasaklı-tag\` Sunucuza Belirli Taga Sahip Üyeler Giremez`,true)
-.addField(`__Bilgilendirme__`,`<:a_:821738957997211659>  \`${prefix}davet\` | Lord Creative'yi Sunucunuza Davet Edersiniz\n<:a_:821738957997211659>  \`${prefix}botbilgi\` | Botun İstatistiklerini Gösterir \n <:a_:821738957997211659>  \`${prefix}ayarlar\` | Sunucunuzdaki Açık veya Kapalı Komutları Gösterir`)
-.setImage(`https://geekflare.com/wp-content/uploads/2021/02/discord-bot-hosting-1200x385.jpg`)
+.addField
+.setImage(`https://cdn.discordapp.com/attachments/778629855738462209/797059960072306698/standard_11.gif`)
 .setThumbnail(client.user.avatarURL)
  message.channel.send(eklenti) 
   };

@@ -14,7 +14,7 @@ let eklenti = new Discord.MessageEmbed()
 .addField(`__Giriş Sistemi__`,`<:onay:820720890009878538>  \`${prefix}giriş-sistemi\` Kayıt Kanalına Atılacak Mesajı Ayarlar`,true)
 .addField(`__İsim Sistem__`,`<:kategori:809152540763095100> \`${prefix}isim-sistem\` Kayıt Ol Komutunu Kullandıktan Sonra Verilecek İsmi Belirler`,true)
 .addField(`__Kayıt Sistemi Kapat__`,`<:kapal:827269229489029181> \`${prefix}kayıt-sistemi-kapat\` Kayıt Sistemini Tamamen Kapatır`,true)
-.setImage(`https://geekflare.com/wp-content/uploads/2021/02/discord-bot-hosting-1200x385.jpg`)
+.setImage(`https://cdn.discordapp.com/attachments/778629855738462209/797059960072306698/standard_11.gif`)
 .setThumbnail(client.user.avatarURL)
  message.channel.send(eklenti) 
   };
