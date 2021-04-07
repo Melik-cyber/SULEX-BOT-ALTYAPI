@@ -27,10 +27,10 @@ const AloneHata = "#f30707";
 
 const emmmmbed = new Discord.MessageEmbed()
 .setThumbnail()
-.addField(`Seulex| Teşekkürler`, `**Selamlar, Ben Seulex Öncelikle Botumuzu Eklediğiniz ve Bize Destek Olduğunuz İçin Sizlere Teşekkürlerimi Sunarım**`)
-.addField(`Seulex | Botun İlk Prefixi : s! Dir. Prefix Ayarlanabilir.`)
-.addField(`Seulex | Nasıl Kullanılır?`, `**Seulex botun tüm özelliklerinden yararlanabilmek için sadece \`${fynx.prefix}yardım\` yazmanız yeterlidir.**`)
-.addField(`Seulex | Linkler`, `**Sohbet Kanalına s!davet Yazmanız Yeterlidir**`)
+.addField(`**Seulex | Teşekkürler**`, `**Selamlar, Ben Seulex Öncelikle Botumuzu Eklediğiniz ve Bize Destek Olduğunuz İçin Sizlere Teşekkürlerimi Sunarım**`)
+.addField(`**Seulex | Botun İlk Prefixi** : s! Dir. Prefix Ayarlanabilir.`)
+.addField(`**Seulex | Nasıl Kullanılır?**`, `**Seulex botun tüm özelliklerinden yararlanabilmek için sadece \`${fynx.prefix}yardım\` yazmanız yeterlidir.**`)
+.addField(`**Seulex | Linkler**`, `**Bot Komut Kanalına s!davet Yazmanız Yeterlidir**`)
 .setFooter(`Seulex | Gelişmiş Türkçe Bot | 2021`)
 .setTimestamp();
 
