@@ -10,7 +10,7 @@ const app = express();
 const http = require("http");
 app.get("/", (request, response) => {
   console.log(
-    `ASD :D Creative Developer XD`
+    `Seulex Bot | Bir Premium Bottan Daha Gelişmişi!`
   );
   response.sendStatus(200);
 });
@@ -27,11 +27,11 @@ const AloneHata = "#f30707";
 
 const emmmmbed = new Discord.MessageEmbed()
 .setThumbnail()
-.addField(`VITA | Teşekkürler`, `**Selamlar, Ben Vita Öncelikle Botumuzu Eklediğiniz ve Bize Destek Olduğunuz İçin Sizlere Teşekkürlerimi Sunarım**`)
-.addField(`VITA | Botun İlk Prefixi : ! (Ünlem) Dir. Prefix Ayarlanabilir.`)
-.addField(`VITA | Nasıl Kullanılır?`, `**Vita botun tüm özelliklerinden yararlanabilmek için sadece \`${fynx.prefix}yardım\` yazmanız yeterlidir.**`)
-.addField(`VITA | Linkler`, `**Sohbet Kanalına -davet Yazmanız Yeterlidir**`)
-.setFooter(`VITA | Gelişmiş Türkçe Bot | 2021`)
+.addField(`Seulex| Teşekkürler`, `**Selamlar, Ben Seulex Öncelikle Botumuzu Eklediğiniz ve Bize Destek Olduğunuz İçin Sizlere Teşekkürlerimi Sunarım**`)
+.addField(`Seulex | Botun İlk Prefixi : s! Dir. Prefix Ayarlanabilir.`)
+.addField(`Seulex | Nasıl Kullanılır?`, `**Seulex botun tüm özelliklerinden yararlanabilmek için sadece \`${fynx.prefix}yardım\` yazmanız yeterlidir.**`)
+.addField(`Seulex | Linkler`, `**Sohbet Kanalına s!davet Yazmanız Yeterlidir**`)
+.setFooter(`Seulex | Gelişmiş Türkçe Bot | 2021`)
 .setTimestamp();
 
 
@@ -121,11 +121,11 @@ process.exit(0)
 const bot = new Discord.Client();
 
 var oyun = [
-`✨ Yardım almak için | -yardım`,
-`🚀 Yeni Özellikler İçin | -yardım`,
+`✨ Yardım almak için | s!yardım`,
+`🚀 Yeni Özellikler İçin | s!yardım`,
 `🔔 Yenilenen Tasarımı İle`,
-`⚡️ Botu eklemek için | -davet`,
-`🌟 Prefix ayarlamak için | -prefix`
+`⚡️ Botu eklemek için | s!davet`,
+`🌟 Prefix ayarlamak için | s!prefix`
 ]
   
 client.on("ready", () => {
@@ -147,7 +147,7 @@ setInterval(function() {
 
 client.on('message', async msg => {
   let prefix = await db.fetch(`prefix.${msg.guild.id}`) || fynx.prefix 
-  if(msg.content == `<@!713713727794446397>`) return msg.channel.send(`> **Lord Creative | Prefix**\n\n> <:a_:821738957997211659>  **Sanırım beni etiketlediniz.**\n > <:a_:821738957997211659>  Buyurun prefix(ön ek)im \`${prefix}\``);
+  if(msg.content == `<@!829272729428819979>`) return msg.channel.send(`> **Seulex | Prefix**\n\n>  **Sanırım beni etiketlediniz.**\n Buyurun prefix(ön ek)im \`${prefix}\``);
 });
 
 
@@ -164,8 +164,8 @@ if (!modlogkanal) return;
   const embed = new Discord.MessageEmbed()
   .setColor("#ffffff")
   .setTitle("MESAJ SİLİNDİ")
-.setDescription(`<:a_:821738957997211659>  <@!${message.author.id}> **adlı kullanıcı tarafından** <#${message.channel.id}> **kanalına gönderilen mesaj silindi!** \n\nSilinen Mesaj: **${message.content}**`)
-  .setFooter("Lord Creative Bot | Log Sistemi")
+.setDescription(`  <@!${message.author.id}> **adlı kullanıcı tarafından** <#${message.channel.id}> **kanalına gönderilen mesaj silindi!** \n\nSilinen Mesaj: **${message.content}**`)
+  .setFooter("Seulex Bot | Log Sistemi")
   modlogkanal.send(embed);
   })
 
@@ -176,9 +176,9 @@ if (!modlogkanal) return;
   const embed = new Discord.MessageEmbed()
   .setColor("#ffffff")
 
-    .setDescription(`<:a_:821738957997211659>  **Üye Sunucudan Yasaklandı!** \n<@!${message.user.id}>, ${message.user.tag}`)
+    .setDescription(`**Üye Sunucudan Yasaklandı!** \n<@!${message.user.id}>, ${message.user.tag}`)
         .setThumbnail(message.user.avatarURL)
-  .setFooter("Lord Creative Bot | Log Sistemi")
+  .setFooter("Seulex | Log Sistemi")
   modlogkanal.send(embed);
   })
 
@@ -190,16 +190,16 @@ if (!modlogkanal) return;
                 let embed = new Discord.MessageEmbed()
                     .setColor('#ffffff')
                 .setTitle("METİN KANALI OLUŞTURULDU")
-                .setDescription(`<:a_:821738957997211659>  ${channel.name} **Adlı Metin Kanalı Oluşturuldu!**`)
-                .setFooter(`Lord Creative Bot | Log Sistemi Kanal ID: ${channel.id}`)
+                .setDescription(` ${channel.name} **Adlı Metin Kanalı Oluşturuldu!**`)
+                .setFooter(`Seulex | Log Sistemi Kanal ID: ${channel.id}`)
                 modlogkanal.send({embed});
             };
             if (channel.type === "voice") {
                 let embed = new Discord.MessageEmbed()
                 .setColor('#ffffff')
 .setTitle("SES KANALI OLUŞTURULDU")
-                .setDescription(`<:a_:821738957997211659>  ${channel.name} **Adlı Ses Kanalı Oluşturuldu!**`)
-                .setFooter(`Lord Creative Bot | Log Sistemi Kanal ID: ${channel.id}`)
+                .setDescription(`${channel.name} **Adlı Ses Kanalı Oluşturuldu!**`)
+                .setFooter(`Seulex Bot | Log Sistemi Kanal ID: ${channel.id}`)
 
                 modlogkanal.send({embed});
             }
