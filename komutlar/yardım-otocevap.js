@@ -4,14 +4,14 @@ const fynx = require("../ayarlar/bot.json");
 exports.run = async (client, message, args) => { 
 let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix 
 let eklenti = new Discord.MessageEmbed()  
-.setColor('#ffffff') 
-.setAuthor(` Oto Cevap Komutları`, client.user.avatarURL())
-.setDescription(`<a:Lord Creative:749380925619437619> Lord Creative botumuzu eklemek için \`${prefix}davet\` yazabilirsiniz.`)
-.addField(`__Oto Cevap Ekle__`,`<a:ayar:750021160237793311> \`${prefix}otocevap-ekle\` Sunucunuza Özel Komut Eklemenize Yarar.`,true)
-.addField(`__Oto Cevap Liste__`,`<a:ayar:750021160237793311> \`${prefix}otocevap-liste\` Sunucunuzdaki Özel Komutların Listesini Gösterir.`,true)
-.addField(`__Oto Cevap Sil__`,`<a:ayar:750021160237793311> \`${prefix}otocevap-sil\` unucunuzdaki Özel Komutu Siler.`,true)
-.addField(`__Bilgilendirme__`,`<:a_:821738957997211659>  \`${prefix}davet\` | Lord Creative'yi Sunucunuza Davet Edersiniz\n<:a_:821738957997211659>  \`${prefix}botbilgi\` | Botun İstatistiklerini Gösterir \n <:a_:821738957997211659>  \`${prefix}ayarlar\` | Sunucunuzdaki Açık veya Kapalı Komutları Gösterir`)
-.setImage(`https://geekflare.com/wp-content/uploads/2021/02/discord-bot-hosting-1200x385.jpg`)
+.setColor('#000000') 
+.setAuthor(`Seulex Oto Cevap Komutları`, client.user.avatarURL())
+.setDescription(`<a:ayarlar:821416196675076207> Seulex botumuzu eklemek için \`${prefix}davet\` yazabilirsiniz.`)
+.addField(`__Oto Cevap Ekle__`,`<a:ayarlar2:821416212566507520> \`${prefix}otocevap-ekle\` Sunucunuza Özel Komut Eklemenize Yarar.`,true)
+.addField(`__Oto Cevap Liste__`,`<:hse:809152333497237574> \`${prefix}otocevap-liste\` Sunucunuzdaki Özel Komutların Listesini Gösterir.`,true)
+.addField(`__Oto Cevap Sil__`,`<:simseq:821416901086806027> \`${prefix}otocevap-sil\` unucunuzdaki Özel Komutu Siler.`,true)
+.addField(`__Bilgilendirme__`,`<a:ayarlar:821416196675076207>  \`${prefix}davet\` | Seulex'i Sunucunuza Davet Edersiniz\n \`${prefix}botbilgi\` | Botun İstatistiklerini Gösterir \n   \`${prefix}ayarlar\` | Sunucunuzdaki Açık veya Kapalı Komutları Gösterir`)
+.setImage(`https://cdn.discordapp.com/attachments/829274706393169942/829326128232923146/standard.gif`)
 .setThumbnail(client.user.avatarURL)
  message.channel.send(eklenti) 
   };
