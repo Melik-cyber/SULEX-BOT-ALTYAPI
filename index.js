@@ -124,9 +124,9 @@ var oyun = [
 `✨ Yardım almak için | s!yardım`,
 `🚀 Yeni Özellikler İçin | s!yardım`,
 `🔔 Yenilenen Tasarımı İle`,
-`⚡️ Botu eklemek için | s!davet`,
-`🌟 Prefix ayarlamak için | s!prefix`
-`Odies.NET
+`⚡️ Botu Eklemek İçin | s!davet`,
+`🌟 Prefix ayarlamak için | s!prefix`,
+`⚡️ OdiesNET | Seviliyorsun :)`
 ]
   
 client.on("ready", () => {
