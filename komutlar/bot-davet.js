@@ -8,8 +8,8 @@ exports.run = async (client, message, args) => {
 
 const embed = new Discord.MessageEmbed()
 .setColor("#000000")
-.setAuthor(`VITA Linkleri:`, client.user.avatarURL())
-.setDescription('**• [VITA yı Ekleyin.]($getBotInvite)**\n\n**• [Vitaya Oy Ver](https://top.gg/bot/758751925175844934#/vote)**')
+.setAuthor(`Seulex Linkleri:`, client.user.avatarURL())
+.setDescription('**• [Seulex yı Ekleyin.]($getBotInvite)**\n\n**• [Seulexe Oy Ver]()**')
 .setFooter(`${message.author.username} tarafından istendi!`) 
 .setTimestamp()
 .setThumbnail(client.user.avatarURL())
