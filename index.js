@@ -126,6 +126,7 @@ var oyun = [
 `🔔 Yenilenen Tasarımı İle`,
 `⚡️ Botu eklemek için | s!davet`,
 `🌟 Prefix ayarlamak için | s!prefix`
+`Odies.NET
 ]
   
 client.on("ready", () => {
