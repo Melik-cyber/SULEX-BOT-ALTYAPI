@@ -6,7 +6,7 @@ let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix
 let eklenti = new Discord.MessageEmbed()  
 .setAuthor(`Seulex Yardım Menüsü`, client.user.avatarURL())
 .setColor('#000000')
-.setDescription(`<:a_:821738957997211659>  Seulex botumuzu eklemek için \`${prefix}davet\` yazabilirsiniz.`)  
+.setDescription(`Seulex botumuzu eklemek için \`${prefix}davet\` yazabilirsiniz.`)  
 .addField(`__Genel Komutlar__`,`<:simseq:<a:an:809151469655425127> \`${prefix}genel\``,true)
 .addField(`__Mod Komutları__`,`<a:ayarlar2:821416212566507520>   \`${prefix}moderasyon\` `,true)
 .addField(`__Guard Komutları__`,`<:hse:809152333497237574>  \`${prefix}guard\`  `,true)
