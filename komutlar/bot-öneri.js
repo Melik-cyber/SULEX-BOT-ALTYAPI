@@ -17,7 +17,7 @@ const onerisiz = new Discord.MessageEmbed()
 
 const onerili = new Discord.MessageEmbed()
 .setColor(AloneDogru)
-.setTitle("Vita | Başarılı")
+.setTitle("Seulex | Başarılı")
 .setDescription("<a:onayl:809153025234305024> Öneriniz alınmıştır! Teşekkür ederiz.")
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`);  
   

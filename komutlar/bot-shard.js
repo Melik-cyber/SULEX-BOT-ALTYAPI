@@ -18,7 +18,7 @@ let shardinfo = {
     }
 let i = client.shard.id
     let shardembed = new Discord.MessageEmbed()
-    .setTitle('Vita Shard İstatistik')
+    .setTitle('Seulex Shard İstatistik')
     .setColor("#000000")
     .setImage(`https://geekflare.com/wp-content/uploads/2021/02/discord-bot-hosting-1200x385.jpg`)
     

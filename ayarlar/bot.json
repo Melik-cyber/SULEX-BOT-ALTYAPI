@@ -1,7 +1,7 @@
 {
     "prefix": "!",
     "youtube_api": "AIzaSyCRBTLwkIXWhul5IgMaUotqS7GVfo938AI",
-    "fynxtoken": "",
+    "fynxtoken": "process.env.token",
     "fynxport": "3000",
-    "pingmesaj": "[Gecenin Karnlığı | Vita]"
+    "pingmesaj": "[Bir Premium Bottan Daha Fazlası!]"
 }
