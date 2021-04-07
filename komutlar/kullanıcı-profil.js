@@ -81,7 +81,7 @@ exports.run = async (bot, msg, args) => {
         .addField(`Katılım Tarihi (Discord)`, userinfo.dctarih, false)
         .addField(`Kimlik`, userinfo.id, true)
         .addField(`Bot mu?`, userinfo.bot, true)
-        .setFooter(`Vita | Kullanıcı Bilgi Sistemi`)
+        .setFooter(`Seulex | Kullanıcı Bilgi Sistemi`)
         msg.channel.send(uembed)
     }
 
