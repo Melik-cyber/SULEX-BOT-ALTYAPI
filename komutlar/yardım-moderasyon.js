@@ -23,7 +23,6 @@ let eklenti = new Discord.MessageEmbed()
 .addField(`__Yavaş Mod__`,`<:simseq:821416901086806027>   \`${prefix}yavaşmod\` Kanala Yazı Süre Limiti Koyar.`,true)
 .addField(`__Sa-As__`,`<a:ayarlar2:821416212566507520> \`${prefix}sa-as\` Sunucuzda Selam Verenlere Selam Der`,true)
 .addField(`__Yasaklı Tag__`,`<:simseq:821416901086806027>  \`${prefix}yasaklı-tag\` Sunucuza Belirli Taga Sahip Üyeler Giremez`,true)
-.addField
 .setImage(`https://cdn.discordapp.com/attachments/778629855738462209/797059960072306698/standard_11.gif`)
 .setThumbnail(client.user.avatarURL)
  message.channel.send(eklenti) 
