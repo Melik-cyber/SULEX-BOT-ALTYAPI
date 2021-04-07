@@ -17,7 +17,7 @@ exports.run = (client, message, args) => {
 
 const Embed = new Discord.MessageEmbed()
  .setColor('#f000000')
-.setAuthor('Vita | Ban Sorgulama', client.user.avatarURL())
+.setAuthor('Seulex | Ban Sorgulama', client.user.avatarURL())
 .setDescription(`<:kategori:809152540763095100> ${user.tag} **Adlı Kullanıcının Ban Nedeni:** \n\n**${reason || "Neden Belirtilmemiş"}**`)
 message.channel.send(Embed)
     })

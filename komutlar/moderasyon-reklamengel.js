@@ -19,7 +19,7 @@ if (!args[0])  {
     let lus = await db.fetch(`reklamengel_${message.guild.id}`)
     
     const reklamengelcim = new Discord.MessageEmbed()
-    .setTitle('Başarılı')
+    .setTitle('Seulex | Başarılı')
       .setColor("#6278c5")
     .setDescription('<a:onayl:809153025234305024> **Reklam Engeli Açtım**')
     return message.channel.send(reklamengelcim)
@@ -31,7 +31,7 @@ if (!args[0])  {
     db.delete(`reklamengel_${message.guild.id}`)
 
    const küfürengelcim22 = new Discord.MessageEmbed()
-    .setTitle('Başarılı')
+    .setTitle('Seulex | Başarılı')
     .setDescription('<a:onayl:809153025234305024>  **Reklam Engeli Kapattım**')
     return message.channel.send(küfürengelcim22)
   }
