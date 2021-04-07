@@ -10,7 +10,7 @@ module.exports.run = async (client, message) => {
   
     const embedd = new Discord.MessageEmbed()
 .setColor(AloneDogru)
-.setTitle("Vita | Kuyruğu Temizle")
+.setTitle("Seulex | Kuyruğu Temizle")
 .setDescription(`<a:mavitik:821416581216600135>  **| Müzik Kuyruğu, ${message.author} tarafından temizlendi.**`) 
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());   

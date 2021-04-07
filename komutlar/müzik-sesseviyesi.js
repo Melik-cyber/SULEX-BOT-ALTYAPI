@@ -37,7 +37,7 @@ if (args < 0) return message.channel.send({embed: {color: AloneHata, description
   client.player.setVolume(message.guild.id, sesseviyesi);
       const embedd = new Discord.MessageEmbed()
 .setColor(AloneDogru)
-.setTitle("Vita |  Ses Seviyesi")
+.setTitle("Seulex |  Ses Seviyesi")
 .setDescription(`<a:mavitik:821416581216600135>  **| Ses seviyesi, ${message.author} tarafından** \`${args.join(" ")}\` **olarak ayarlandı.**`) 
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());   

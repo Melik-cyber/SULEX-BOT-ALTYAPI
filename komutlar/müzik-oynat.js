@@ -35,7 +35,7 @@ if(SuAndaSarkiOynatilmaktadir){
 const sarki = await client.player.addToQueue(message.guild.id, args.join(" "));
   const kuyrukekle = new Discord.MessageEmbed()
   .setColor(AloneDogru)
-  .setTitle("Vita | Kuyruğa Ekle")
+  .setTitle("Seulex | Kuyruğa Ekle")
   .setDescription(`<a:mavitik:821416581216600135> **|** \`${sarki.name}\` **adlı müzik,**\n${message.author} **tarafından kuyruğa eklendi!**`)
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());   
@@ -44,7 +44,7 @@ message.channel.send(kuyrukekle)
 const sarki = await client.player.play(message.member.voice.channel, args.join(" "));
   const oynanan = new Discord.MessageEmbed()
   .setColor(AloneDogru)
-  .setTitle("Vita | Oynatılan Şarkı")
+  .setTitle("Seulex | Oynatılan Şarkı")
   .setDescription(` :musical_note: **|** \`${sarki.name}\` **adlı müzik şu anda oynatılıyor.**`)
   .setThumbnail(client.user.avatarURL())
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());   
@@ -52,8 +52,8 @@ message.channel.send(oynanan)
 sarki.queue.on('end', () => {
   const bitti = new Discord.MessageEmbed()
   .setColor(AloneDogru)
-  .setTitle("Lord Creative | Kuyruk Bitti!")
-  .setDescription(`<:kategori:809152540763095100>  **| Kuyruktaki tüm müzikler oynatıldı. Lord Creative kanaldan ayrılıyor.\n\nLord Creative Tercih ettiğiniz için teşekkür ederiz.**`)
+  .setTitle("Seulex | Kuyruk Bitti!")
+  .setDescription(`<:kategori:809152540763095100>  **| Kuyruktaki tüm müzikler oynatıldı. Seulex kanaldan ayrılıyor.\n\nSeulex Tercih ettiğiniz için teşekkür ederiz.**`)
   .setThumbnail(client.user.avatarURL())
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL());  
 message.channel.send(bitti)

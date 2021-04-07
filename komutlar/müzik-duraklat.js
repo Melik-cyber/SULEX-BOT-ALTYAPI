@@ -33,7 +33,7 @@ if(!client.player.isPlaying(message.guild.id)) return message.channel.send(hata2
 const sarki = await client.player.pause(message.guild.id);
 const embed = new Discord.MessageEmbed()
 .setColor(AloneDogru)
-.setTitle("Vita | Duraklat")
+.setTitle("Seulex | Duraklat")
 .setDescription(`<a:mavitik:821416581216600135>  | \`${sarki.name}\` adlı müzik ${message.author} tarafından duraklatıldı!`) 
 .setThumbnail(`https://drummofficial.com/wp-content/uploads/2017/08/equalizer3.gif`)
 .setFooter(`©️ Tüm hakları saklıdır | Yeni Nesil Gelişmiş Bot | 2021`, client.user.avatarURL())
