@@ -18,9 +18,9 @@ const Discord = require('discord.js');
        .setColor("#000000")
        .setThumbnail(client.user.avatarURL)
        .setTimestamp()
-       .setFooter('Vita', client.user.avatarURL)
+       .setFooter('Seulex', client.user.avatarURL)
 
-       .addField(`**Vita | Duyuru**`, `**${question}**`)
+       .addField(`**Seulex | Duyuru**`, `**${question}**`)
    
      message.channel.send(embed).then(function(message) {
 

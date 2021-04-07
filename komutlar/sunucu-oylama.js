@@ -18,9 +18,9 @@ const Discord = require('discord.js');
        .setColor("#000000")
        .setThumbnail(client.user.avatarURL)
        .setTimestamp()
-       .setFooter('VitaBot | Gecenin Karanlığı |', client.user.avatarURL)
+       .setFooter('Seulex | Bir Premium Bottan Daha Gelişmişi |', client.user.avatarURL)
 
-       .addField(`**Vita Bot  | Oylama**`, `**${question}**`);
+       .addField(`**Seulex  | Oylama**`, `**${question}**`);
    
      message.channel.send(embed).then(function(message) {
 

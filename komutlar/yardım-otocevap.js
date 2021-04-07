@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix 
 let eklenti = new Discord.MessageEmbed()  
 .setColor('#ffffff') 
-.setAuthor(`Lord Creative Oto Cevap Komutları`, client.user.avatarURL())
+.setAuthor(` Oto Cevap Komutları`, client.user.avatarURL())
 .setDescription(`<a:Lord Creative:749380925619437619> Lord Creative botumuzu eklemek için \`${prefix}davet\` yazabilirsiniz.`)
 .addField(`__Oto Cevap Ekle__`,`<a:ayar:750021160237793311> \`${prefix}otocevap-ekle\` Sunucunuza Özel Komut Eklemenize Yarar.`,true)
 .addField(`__Oto Cevap Liste__`,`<a:ayar:750021160237793311> \`${prefix}otocevap-liste\` Sunucunuzdaki Özel Komutların Listesini Gösterir.`,true)

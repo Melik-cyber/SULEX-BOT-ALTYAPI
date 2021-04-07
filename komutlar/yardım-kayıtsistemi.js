@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix 
 let eklenti = new Discord.MessageEmbed()  
 .setColor('#000000') 
-.setAuthor(`VitaBot Kayıt Komutları`, client.user.avatarURL())
+.setAuthor(`Seulex Kayıt Komutları`, client.user.avatarURL())
 .addField(`__Kanal Ayarla__`,`<:hse:809152333497237574>  \`${prefix}kayıt-kanal-ayarla\` Kayıt Ol Komutunun Kullanılacağı Kanalı Belirler`,true)
 .addField(`__Kayıt Log__`,`<:kategori:809152540763095100>  \`${prefix}kayıt-log-kanal-ayarla\` Kayıt Ol Komutunun Denetim Kaydı Kanalını Belirler`,true)
 .addField(`__Kayıt Ol__`,` <:simseq:821416901086806027>  \`${prefix}kayıt-ol\`  Kayıt Kanalında Kayıt Olmanızı Sağlar`,true)

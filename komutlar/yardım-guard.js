@@ -4,7 +4,7 @@ const fynx = require("../ayarlar/bot.json");
 exports.run = async(client, message, args) => { 
 let prefix = await db.fetch(`prefix.${message.guild.id}`) || fynx.prefix 
 let eklenti = new Discord.MessageEmbed()  
-.setAuthor(`Vita Koruma Komutları`, client.user.avatarURL())
+.setAuthor(`Seulex Koruma Komutları`, client.user.avatarURL())
 .setColor('#000000')
 
 .addField(`__YAKINDA__`,` <a:carpi:821416413138911272> Bu Komut Çok Yakında Eklenecektir.`)
