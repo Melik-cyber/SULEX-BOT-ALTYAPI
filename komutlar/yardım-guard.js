@@ -8,7 +8,7 @@ let eklenti = new Discord.MessageEmbed()
 .setColor('#000000')
 
 .addField(`__YAKINDA__`,` <a:carpi:821416413138911272> Bu Komut Çok Yakında Eklenecektir.`)
-  .setImage(`https://cdn.discordapp.com/attachments/778629855738462209/797059960072306698/standard_11.gif`)
+  .setImage(`https://cdn.discordapp.com/attachments/829274706393169942/829326128232923146/standard.gif`)
 .setThumbnail(client.user.avatarURL)
  message.channel.send(eklenti) 
   };
