@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
 const embed = new Discord.MessageEmbed()
 .setColor("#000000")
 .setAuthor(`Seulex Linkleri:`, client.user.avatarURL())
-.setDescription('**• [Seulex yı Ekleyin.]($getBotInvite)**\n\n**• [Seulexe Oy Ver]()**')
+.setDescription('**• [Seulexi Ekleyin.](https://discord.com/oauth2/authorize?client_id=829272729428819979&scope=bot&permissions=5904534847)**\n\n**• [Seulexe Oy Ver]()**')
 .setFooter(`${message.author.username} tarafından istendi!`) 
 .setTimestamp()
 .setThumbnail(client.user.avatarURL())
