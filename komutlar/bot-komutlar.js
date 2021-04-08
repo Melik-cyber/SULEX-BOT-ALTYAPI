@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 exports.run = async (client, message, args, level) => {
     
     const embed = new Discord.MessageEmbed()
-    .setTitle(`Lord Creative - Komut Sayısı`)
+    .setTitle(`Seulex - Komut Sayısı`)
     .setDescription('**\n Seulex | Toplam**  **`' + client.commands.size + '`** **Komut Vardır!**')
     .setColor("#000000")
     .setThumbnail('https://i.ibb.co/s2qGRFx/kod.png')
