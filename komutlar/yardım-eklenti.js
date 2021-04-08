@@ -13,6 +13,6 @@ let eklenti = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL)
   };
 exports.config = {
-name: "eklenti",
-  aliases: []
+name: "ekleme",
+  aliases: ["eklenti"]
 }
