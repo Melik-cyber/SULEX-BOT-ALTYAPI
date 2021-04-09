@@ -108,7 +108,7 @@ newState.setSelfDeaf(true);
 
 client.login(fynx.fynxtoken)
 .then(function() {
-console.log('Token doğru. Bot aktif ediliyor.')
+console.log('Token doğru. ${client.user.username} ismi ile giriş yapıldı!')
 }, function(err) {
 console.log("Tokeniniz yanlış. Bot başlatılamıyor.")
 setInterval(function() {
