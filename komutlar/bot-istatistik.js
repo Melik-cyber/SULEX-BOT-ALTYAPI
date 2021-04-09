@@ -19,5 +19,5 @@ message.channel.send(lordcreative)
 
 exports.config = {
 name: "botbilgi",
-aliases: []
+aliases: ["i", "istatistik"]
 }
