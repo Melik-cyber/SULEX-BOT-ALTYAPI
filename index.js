@@ -490,3 +490,12 @@ await user.ban() } }
 })
 
 //////////////////////////////////////////////
+
+
+////BOT SESTE
+
+  client.on("ready", async () => {
+  console.log("Bot sesli kanala katıldı !!")
+  let botVoiceChannel = client.channels.cache.get("831035959088119859");
+  if (botVoiceChannel) botVoiceChannel.join().catch(err => console.error("Ups Bişilerr Oldu. Kontrol Et!"));
+});
