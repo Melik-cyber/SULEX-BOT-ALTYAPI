@@ -11,6 +11,8 @@ let eklenti = new Discord.MessageEmbed()
 .addField(`__DBD.JS Kodları İçin : __`,`<:dbdjs:809151911470039160>  \`Tıklayabilirsiniz!\`  `,true)
 .addField(`__Python Kodları İçin : __`,`<:python:830829016797020161>  \`Tıklayabilirsiniz!\` `,true)
 .addField(`__JS Kodları İçin : __`,`<:nodejs:830828876900597800>  \`Tıklayabilirsiniz!\`  `,true)
+.addField(`__Altyapılar İçin : __`,`<a:ayarlar2:821416212566507520>  \`Tıklayabilirsiniz!\`  `,true)
+.addField(`__JS İçin Eklenti Komutları : __`,`<:1reis:821416169985540106>  \`Tıklayabilirsiniz!\`  `,true)
  message.channel.send(eklenti) 
   };
 exports.config = {
