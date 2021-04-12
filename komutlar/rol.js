@@ -11,8 +11,6 @@ let eklenti = new Discord.MessageEmbed()
 .addField(`__DBD.JS Kodları İçin : __`,`<:dbdjs:809151911470039160>  \`Tıklayabilirsiniz!\`  `,true)
 .addField(`__Python Kodları İçin : __`,`<:python:830829016797020161>  \`Tıklayabilirsiniz!\` `,true)
 .addField(`__JS Kodları İçin : __`,`<:nodejs:830828876900597800>  \`Tıklayabilirsiniz!\`  `,true)
-  .setImage(`https://cdn.discordapp.com/attachments/829274706393169942/829326128232923146/standard.gif`)
-.setThumbnail(client.user.avatarURL)
  message.channel.send(eklenti) 
   };
 exports.config = {
