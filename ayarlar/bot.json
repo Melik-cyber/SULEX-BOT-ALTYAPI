@@ -3,5 +3,6 @@
     "youtube_api": "AIzaSyCRBTLwkIXWhul5IgMaUotqS7GVfo938AI",
     "fynxtoken": "process.env.token",
     "fynxport": "3000",
-    "pingmesaj": "[Bir Premium Bottan Daha Fazlası!]"
+    "pingmesaj": "[Bir Premium Bottan Daha Fazlası!]",
+  "token": "ODMxMTg3Nzk5ODg1MDg2Nzcw.YHRl9g.vzfPcs3uh8N8aFUwRZ0t9Pg78pM"
 }
